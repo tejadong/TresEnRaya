@@ -1,0 +1,17 @@
+.casilla {
+    width: 120px;
+    height: 120px;
+    font-size: 2em;
+    margin: 0;
+    border: 1px solid white;
+    background: lightgray;
+    color: lightgray;
+}
+
+.texto_rojo {
+    color: red;
+}
+
+.texto_azul {
+    color: blue;
+}
