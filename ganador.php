@@ -10,7 +10,6 @@
         $ganador = "Hubo empate :(";
     }
 
-    $_SESSION = array();
     session_destroy();
 ?>
 <!doctype html>

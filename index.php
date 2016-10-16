@@ -6,8 +6,8 @@
     // Si pulso el botón de reiniciar vacio el array $_SESSION y destruyo la sesión.
     // (Hice $_SESSION = array() porque al hacer var_dump de $_SESSION seguían apareciendo datos, aun habiendo usado session_destroy())
     if (isset($_POST['reiniciar'])) {
-        $_SESSION = array();
         session_destroy();
+        header('Location: index.php', true, 302);
     }
 
     // Si no existen la siguientes variables las crea. Son para llevar el turno y si ya ha ganado alguno.
